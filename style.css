@@ -8,7 +8,7 @@
   width: 12rem;
   height: 5rem;
   border-radius: 50px;
-  border: 2px solid grey;
+  border: 1px solid grey;
 }
 input{
   opacity: 0;
@@ -31,24 +31,20 @@ input{
   height: 4.5rem;
   width: 4.5rem;
   left: 3px;
-  bottom: 2px;
+  bottom: 3px;
   background-color: white;
   transition: 0.5s;
   border-radius: 50%;
   box-shadow: 0 0 5px grey;
 }
 input:checked + #switch{
-  background-color: green;
+  background-color: #30f34b;
 }
 input:checked + #switch:before{
   animation: grow 0.5s 1;
   transform: translateX(7rem);
 }
-input + #switch:before{
-  animation: grow 0.5s;
-  transform: translateX(0rem); 
-  animation-direction: reverse;
-}
+
 @keyframes grow{
   0% { transform: scaleX(1)  }
   25% { transform: scaleX(1.2) translateX(2rem); }
